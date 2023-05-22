@@ -23,7 +23,7 @@ function Desktop({desktopData}){
     function computePrice(){
         console.log(hddStorage)
         if (hddStorage.toString() && sddStorage.toString() && RAM.toString() && brand.name &&graphics.name&&cpu.name&&year.toString()){
-            let url = "http://0.0.0.0:8000/desktop/?hddStorage="+hddStorage.toString()+
+            let url = "https://2cb9eb2pvq.us-east-1.awsapprunner.com/desktop/?hddStorage="+hddStorage.toString()+
                 "&sddStorage="+sddStorage.toString()+"&ram="+RAM.toString()+"&yearOfLaunch="+year.toString()+"&brand="+brand.name
                 +"&graphicsModel="+graphics.name+"&cpuModel="+cpu.name.replace(' ','%20')
             fetch(url)
