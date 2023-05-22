@@ -8,7 +8,7 @@ function MainPage() {
     
     return (
         <div>
-            <base href="http://localhost:3000" />
+            <base href="https://mupknf4d32.us-east-1.awsapprunner.com/" />
             <div><NavBar section="Home"/></div>
         </div>
     );
