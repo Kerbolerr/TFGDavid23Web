@@ -83,7 +83,17 @@ function Browse() {
                     role="tabpanel"
                     aria-labelledby="v-pills-link1-tab"
                 >
-                {mode=="Desktop"? allDesktop.map((object, i) => <DesktopDevices desktopData={object} key = {i} />):""}
+                {/*{mode=="Desktop"? allDesktop.map((object, i) => <DesktopDevices desktopData={object} key = {i} />):""}*/ }
+                <div className="card">
+                    <div style={{
+                        textAlign: 'center',
+                        margin: "40 40 40 auto",}} 
+                        className="card-body"
+                    >
+                    <p>Here should come a section were devices can be uploaded and seen.</p>
+                    <p>It is a future improvement for the project.</p>
+                    </div>
+                </div>
                 </div>
                 </div>
             </div>
