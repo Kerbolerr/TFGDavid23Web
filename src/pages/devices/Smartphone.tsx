@@ -21,7 +21,7 @@ function Smartphone(){
     function computePrice(){
         if (storage.toString() && RAM.toString() && brand.name&& screenSize.toString()&&
             resolution.toString() && megapixels.toString() &&year.toString() && bandwith.toString()){
-            let url = "https://2cb9eb2pvq.us-east-1.awsapprunner.com/smartphone/?storage="+storage.toString()+
+            let url = "http://0.0.0.0:8000/smartphone/?storage="+storage.toString()+
                 "&ram="+RAM.toString()+"&yearOfLaunch="+year.toString()+"&model="+brand.name.replace(' ','%20')
                 +"&screenSize="+screenSize.toString()+"&resolution="+resolution.toString()+"&megapixels="+megapixels.toString()+"&bandwith="+(bandwith.name==="5G"? "1" : "0")
             fetch(url)

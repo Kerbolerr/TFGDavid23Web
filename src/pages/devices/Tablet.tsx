@@ -20,7 +20,7 @@ function Tablet(){
     function computePrice(){
         if (storage.toString() && RAM.toString() && brand.name&& screenSize.toString()&&
             resolution.toString() && megapixels.toString() &&year.toString()){
-            let url = "https://2cb9eb2pvq.us-east-1.awsapprunner.com/tablet/?storage="+storage.toString()+
+            let url = "http://0.0.0.0:8000/tablet/?storage="+storage.toString()+
                 "&ram="+RAM.toString()+"&yearOfLaunch="+year.toString()+"&model="+brand.name.replace(' ','%20')
                 +"&screenSize="+screenSize.toString()+"&resolution="+resolution.toString()+"&megapixels="+megapixels.toString()
             fetch(url)

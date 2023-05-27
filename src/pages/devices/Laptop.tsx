@@ -25,7 +25,7 @@ function Laptop({laptopData}){
     function computePrice(){
         if (hddStorage.toString() && sddStorage.toString() && RAM.toString() && brand.name
             &&graphics.name&&cpu.name&&year.toString()&&screenSize.toString()&&resolution.toString()){
-            let url = "https://2cb9eb2pvq.us-east-1.awsapprunner.com/laptop/?hddStorage="+hddStorage.toString()+
+            let url = "http://0.0.0.0:8000/laptop/?hddStorage="+hddStorage.toString()+
                 "&screenSize="+screenSize.toString()+"&resolution="+resolution.toString()+
                 "&sddStorage="+sddStorage.toString()+"&ram="+RAM.toString()+"&yearOfLaunch="+year.toString()+"&brand="+brand.name
                 +"&graphicsModel="+graphics.name+"&cpuModel="+cpu.name.replace(' ','%20')
