@@ -22,7 +22,7 @@ npm start
 
 By default, the application will be running on localhost.
 
-It is needed to also being executing the data prediction tool for obtaining predictions.
+It is needed to also execute the data prediction tool for obtaining predictions.
 
 ##
 David Gálvez Alcántara
