@@ -138,7 +138,9 @@ const FileUploadSingle = props => {
   return (
     <div>
       <input type="file" onChange={handleFileChange} />
-      <Link to="/predict" state={{ desktopData: stateDesktop, laptopData:stateLaptop, mode:stateMode }} className="link">Predict</Link>
+      <Link to="/predict" state={{ desktopData: stateDesktop, laptopData:stateLaptop, mode:stateMode }} className="link">
+        <button type="button" className="btn btn-primary">Predict</button>
+      </Link>
       {computeText()}
     </div>
   );
