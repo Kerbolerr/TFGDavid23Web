@@ -59,9 +59,9 @@ function Browse() {
         }
     }
     
-    useEffect(() => {
-        getAllDevices("Desktop");
-    }, []);
+    //useEffect(() => {
+    //    getAllDevices("Desktop");
+    //}, []);
     
     return (
         <div>
